@@ -69,7 +69,7 @@ def baseNormalize(text):
 
                 if c == None:
                     try:
-                        mod = __import__('unidecode.x%02x'%(h), [], [], ['data'])
+                        mod = __import__('unidecode.x%03x'%(h), [], [], ['data'])
                     except ImportError:
                         CHAR[h] = NULLMAP
                         res.append('')
